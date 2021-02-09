@@ -63,7 +63,7 @@ function jslib() {
         'node_modules/jquery/dist/jquery.js',
         "node_modules/slick-carousel/slick/slick.js"
     ])
-        .pipe(concat('lib.min.js'))
+        .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(dest('app/js'))
         .pipe(browserSync.stream())
@@ -93,7 +93,7 @@ function build() {
         'app/css/libs.min.css',
         'app/css/style.min.css',
         'app/fonts/**/*',
-        'app/js/lib.min.js',
+        'app/js/libs.min.js',
         'app/js/main.min.js',
     ], { base: 'app' })  //чтобы в дист были такие же папки
         .pipe(dest('dist'))

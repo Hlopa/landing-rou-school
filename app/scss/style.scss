@@ -1,6 +1,4 @@
-@import '_fonts';
-@import '_global';
-
-.header{
-    background-color:rosybrown;
-}
+@import "_fonts";
+@import "_vars";
+@import "_global";
+@import "header";

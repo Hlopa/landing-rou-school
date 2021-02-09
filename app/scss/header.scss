@@ -1,0 +1,44 @@
+.header {
+  background-color: rosybrown;
+}
+
+.header__inner {
+  padding: 55px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: baseline;
+}
+
+.header__menu-list {
+  display: flex;
+}
+
+.header__menu-item {
+  & + & {
+    margin-left: 25px;
+  }
+}
+
+.header__btn {
+  padding: 6px 32px;
+  margin-top: -12px;
+}
+
+.header__menu-link {
+  font-family: "FiraSans", sans-serif;
+  color: $text-color-dark;
+  letter-spacing: -0.25px;
+}
+
+.header__btn {
+  margin-left: 20px;
+}
+
+.header__social {
+  margin-left: 30px;
+}
