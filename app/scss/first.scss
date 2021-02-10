@@ -1,0 +1,42 @@
+.first {
+    position: relative;
+    background-image: url(../images/first-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .first__descr {
+    z-index: 10;
+    position: absolute;
+    top: 22%;
+    width: 36%;
+  }
+  
+  .first__title {
+    font-family: "FiraSans", sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 108px;
+    color: $text-color-dark;
+    margin-bottom: 40px;
+  }
+  
+  .first__text {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 60px;
+  }
+  
+  .first__btn {
+    padding: 24px 44px;
+  }
+  
+  .first__image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
