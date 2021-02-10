@@ -9,11 +9,16 @@ html {
 }
 
 body {
+  margin: 0 auto;
+  max-width: 2560px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   color: $text-color;
+  background-image: url(../images/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -106,4 +111,25 @@ img {
   .icon-instagram {
     color: #df6053;
   }
+}
+
+.section__title-sub {
+  color: $main-color;
+  text-transform: uppercase;
+  font-family: "FiraSans", sans-serif;
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.section__title-main {
+  font-family: "FiraSans", sans-serif;
+  font-weight: 700;
+  color: $text-color-dark;
+  font-size: 60px;
+  line-height: 76px;
+}
+.section__title {
+  max-width: 60%;
 }
