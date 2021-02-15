@@ -16,9 +16,6 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: $text-color;
-  background-image: url(../images/body-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h1,
@@ -68,6 +65,8 @@ img {
   font-weight: 700;
   font-size: 24px;
 }
+
+
 
 .btn-second {
   min-width: 170px;
