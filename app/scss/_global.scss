@@ -51,8 +51,8 @@ img {
 }
 
 .container {
-  max-width: 1230px;
-  padding: 0px 30px;
+  max-width: 1370px;
+  padding: 0px 100px;
   margin: 0 auto;
 }
 
@@ -65,9 +65,11 @@ img {
   font-family: "FiraSans", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .btn-second {
+  cursor: pointer;
   min-width: 170px;
   font-family: "FiraSans", sans-serif;
   font-weight: 800;
