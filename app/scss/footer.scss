@@ -1,0 +1,133 @@
+.footer {
+    padding: 170px 0px 55px;
+    background-color: #fff;
+  }
+  
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  
+  .footer__column {
+    flex: 0 1 15%;
+  }
+  
+  .footer__info {
+    flex: 0 1 33%;
+  }
+  
+  .footer__contacts {
+    flex: 0 1 25%;
+  }
+  
+  .footer__logo {
+    margin-bottom: 37px;
+  }
+  
+  .footer__info-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__mail {
+    position: relative;
+  }
+  
+  .footer__mail-input {
+    border-radius: 7px;
+    background-color: #f3f9fb;
+    height: 66px;
+    border: none;
+    width: 100%;
+    padding: 0px 20px;
+    &::placeholder {
+      color: #999999;
+      font-size: 18px;
+    }
+    &:focus {
+      outline-color: #b3b4b4;
+    }
+  }
+  
+  .footer__mail-btn {
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+    &::before {
+      color: #666666;
+      font-size: 24px;
+    }
+  }
+  
+  .footer__column-title {
+    color: #000;
+    font-family: "FiraSans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .footer__list-item {
+    margin-bottom: 8px;
+    a {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  
+  .footer__contacts-item {
+    position: relative;
+    padding-left: 31px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__bottom-social {
+    span {
+      color: #000;
+      font-family: "FiraSans", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .social-list__link::before {
+      font-size: 18px;
+    }
+  }
+  
+  .footer__social {
+    margin-left: 20px;
+    display: inline-flex;
+  }
+  
+  .footer__bottom-copy {
+    font-size: 18px;
+    color: #666;
+    span {
+      font-family: "FiraSans", sans-serif;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+  
