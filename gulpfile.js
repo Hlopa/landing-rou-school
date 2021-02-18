@@ -61,7 +61,8 @@ function js() {
 function jslib() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        "node_modules/slick-carousel/slick/slick.js"
+        "node_modules/slick-carousel/slick/slick.js",
+        'app/js/dinamic-adaptiv.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

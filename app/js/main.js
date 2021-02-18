@@ -22,3 +22,17 @@ sliderText.forEach(item => {
 
     }
 })
+
+
+//Хедер-бургер
+
+const burger = document.querySelector('.menu-burger'),
+menuBody = document.querySelector('.header__menu-body');
+
+
+burger.addEventListener('click', ()=>{
+    burger.classList.toggle('menu-burger__active');
+    menuBody.classList.toggle('header__menu-body--show');
+})
+
+
