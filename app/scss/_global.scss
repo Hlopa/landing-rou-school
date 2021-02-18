@@ -85,6 +85,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   position: relative;
+  cursor: pointer;
   &::after {
     position: absolute;
     content: "";
