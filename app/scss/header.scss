@@ -38,6 +38,27 @@
   font-family: "FiraSans", sans-serif;
   color: $text-color-dark;
   letter-spacing: -0.25px;
+  position: relative;
+  transition: all 2s;
+  &::after {
+    transition: all 0.5s;
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $main-color;
+  }
+
+  @media (min-width: 992px) {
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .header__btn {

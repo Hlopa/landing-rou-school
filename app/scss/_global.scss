@@ -58,6 +58,7 @@ img {
 }
 
 .btn-main {
+  transition: all 0.5s;
   text-align: center;
   box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
@@ -67,10 +68,19 @@ img {
   font-family: "FiraSans", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  border: 2px solid transparent;
   cursor: pointer;
+  @media(min-width: 992px){
+    &:hover{
+      background-color: transparent;
+      color: $text-color-dark;
+      border: 2px solid $main-color;
+    }
+  }
 }
 
 .btn-second {
+  transition: all 0.5s;
   text-align: center;
   cursor: pointer;
   min-width: 170px;
@@ -80,6 +90,12 @@ img {
   font-size: 18px;
   border: 2px solid $main-color;
   border-radius: 7px;
+  @media(min-width: 992px){
+    &:hover{
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
 }
 
 .link-info {

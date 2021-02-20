@@ -31,8 +31,18 @@
 .team__item {
   flex: 0 1 23%;
   text-align: left;
+  img {
+    transition: all 0.3s ease;
+  }
   &:nth-child(2n) {
     margin-top: 72px;
+  }
+  @media (min-width: 992px) {
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
   }
 }
 
@@ -81,6 +91,7 @@
   .team__item:nth-child(2n) {
     margin-top: 35px;
   }
+
   .team__image {
     margin-bottom: 10px;
   }
