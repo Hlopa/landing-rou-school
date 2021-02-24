@@ -62,9 +62,15 @@ if(bodyWidth > 950){
         advantagesItem3 = advantagesSection.querySelector('.advantages__item--3');
     
     const featuresSection = document.querySelector('.features'),
-        featuresColumn1 = document.querySelector('.features__box-column--1'),
-        featuresColumn2 = document.querySelector('.features__box-column--2'),
-        featuresColumn3 = document.querySelector('.features__box-column--3');
+        featuresColumn1 = featuresSection.querySelector('.features__box-column--1'),
+        featuresColumn2 = featuresSection.querySelector('.features__box-column--2'),
+        featuresColumn3 = featuresSection.querySelector('.features__box-column--3');
+
+    const contactsSection = document.querySelector('.contacts'),
+        contactsText  =   contactsSection.querySelector('.contacts__text'),
+        itemPhone = contactsSection.querySelector('.item--phone'),
+        itemMail = contactsSection.querySelector('.item--mail'),
+        itemAdress = contactsSection.querySelector('.item--adress');
     
     
     function isPartiallyVisible(el, num) {
@@ -95,6 +101,13 @@ if(bodyWidth > 950){
             addClasses(featuresColumn1, ['animate__animated', 'animate__flipInY', 'animate__delay-3s']);
             addClasses(featuresColumn2, ['animate__animated', 'animate__flipInY', 'animate__delay-2s']);
             addClasses(featuresColumn3, ['animate__animated', 'animate__flipInY', 'animate__delay-1s']);
+        }
+
+        if (isPartiallyVisible(contactsSection, 100)) {
+            addClasses(contactsText, ['animate__animated', 'animate__fadeInRight']);
+            addClasses(itemPhone, ['animate__animated', 'animate__fadeInUpBig', 'animate__delay-1s']);
+            addClasses(itemMail, ['animate__animated', 'animate__fadeInUpBig', 'animate__delay-2s']);
+            addClasses(itemAdress, ['animate__animated', 'animate__fadeInUpBig', 'animate__delay-3s']);
         }
     
     };

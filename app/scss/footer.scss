@@ -83,6 +83,11 @@
     font-size: 18px;
     line-height: 20px;
   }
+  @media(min-width: 992px){
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer__contacts-item {
