@@ -92,6 +92,12 @@
 }
 
 @media (max-width: 1020px) {
+
+  .header__inner{
+    padding: 55px 0px 6px;
+  }
+
+
   .header__content {
     flex-direction: row-reverse;
   }
@@ -135,7 +141,7 @@
   }
 
   .header__menu-body {
-    transform: translatex(800px);
+    display: none;
     transition: all 0.5s ease;
     position: absolute;
     width: 30%;
@@ -165,7 +171,7 @@
   }
 
   .header__menu-body--show {
-    transform: translatex(0px);
+    display: block;
   }
 
   .header__social {

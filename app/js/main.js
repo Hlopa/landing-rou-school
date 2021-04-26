@@ -21,7 +21,36 @@ sliderText.forEach(item => {
         item.style.cssText = `overflow-y: scroll; max-height: 250px`;
 
     }
-})
+});
+
+
+
+//Плавный скролл меню
+
+const menuList = document.querySelector('.header__menu-list');
+
+const getSmoothScroll = () => {
+  const ancors = menuList.querySelectorAll('a');
+
+  const getScroll = (element) => {
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+      const blockID = element.getAttribute('href');
+      document.querySelector('' + blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      burger.classList.toggle('menu-burger__active');
+    menuBody.classList.toggle('header__menu-body--show');
+    })
+  }
+
+  ancors.forEach((item) => {
+    getScroll(item);
+  });
+}
+
+getSmoothScroll();
 
 
 //Хедер-бургер
